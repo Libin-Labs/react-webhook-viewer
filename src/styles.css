@@ -1,0 +1,64 @@
+.lp-webhook {
+  --lp-webhook-accent: #2563eb;
+  --lp-webhook-border: #b8c2d0;
+  font:
+    14px/1.5 system-ui,
+    sans-serif;
+  color: #172033;
+  background: #fff;
+  border: 1px solid var(--lp-webhook-border);
+  border-radius: 0.5rem;
+  padding: 1rem;
+}
+.lp-webhook-filters {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem;
+}
+.lp-webhook input,
+.lp-webhook select,
+.lp-webhook button {
+  padding: 0.5rem;
+  color: inherit;
+  background: #f8fafc;
+  border: 1px solid var(--lp-webhook-border);
+}
+.lp-webhook button {
+  cursor: pointer;
+}
+.lp-webhook button:disabled {
+  cursor: default;
+  opacity: 1;
+}
+.lp-webhook :focus-visible {
+  outline: 2px solid var(--lp-webhook-accent);
+  outline-offset: 3px;
+}
+.lp-webhook-scroll {
+  overflow: auto;
+}
+.lp-webhook table {
+  width: 100%;
+  text-align: left;
+  border-collapse: collapse;
+}
+.lp-webhook td,
+.lp-webhook th {
+  padding: 0.5rem;
+  border-bottom: 1px solid var(--lp-webhook-border);
+}
+.lp-webhook [data-selected='true'] {
+  background: #eff6ff;
+}
+.lp-webhook pre {
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+  max-height: 24rem;
+  overflow: auto;
+  background: #f1f5f9;
+  padding: 0.75rem;
+}
+.lp-webhook article p {
+  overflow-wrap: anywhere;
+}
